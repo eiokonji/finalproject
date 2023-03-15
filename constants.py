@@ -1,10 +1,9 @@
 import numpy
 import random
 
-
 numberOfGenerations = 500
 populationSize = 10
-numOfRuns = 7
+numOfRuns = 10
 seed = 5
 
 numSensorNeurons = 1

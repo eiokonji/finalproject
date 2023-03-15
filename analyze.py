@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # data
 bigList = []
-for seed in range(7):
+for seed in range(10):
     with open(f'BestFitness500_10_{seed+1}.txt', 'r') as file:
         data = []
         for line in file:
@@ -24,9 +24,9 @@ line4, = plt.plot(bigList[3], label = 'Seed 4')
 line5, = plt.plot(bigList[4], label = 'Seed 5')
 line6, = plt.plot(bigList[5], label = 'Seed 6')
 line7, = plt.plot(bigList[6], label = 'Seed 7')
-# line8, = plt.plot(bigList[7], label = 'Seed 8')
-# line9, = plt.plot(bigList[8], label = 'Seed 9')
-# line10, = plt.plot(bigList[9], label = 'Seed 10')
+line8, = plt.plot(bigList[7], label = 'Seed 8')
+line9, = plt.plot(bigList[8], label = 'Seed 9')
+line10, = plt.plot(bigList[9], label = 'Seed 10')
 leg = plt.legend(loc='lower right')
 
 
