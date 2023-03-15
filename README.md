@@ -37,6 +37,8 @@ As mentioned earlier, this creature was evolved with an adapted tournament style
 2. All members of the population will battle each other and the fitter half of the population will dominate the tournament.
 3. These members will then become the parents of the next generation and this process will repeat consistently until all the generations have been lived through.
 
+<img src="https://github.com/eiokonji/finalproject/blob/main/readme_imgs/finalimg6.png">
+
 **Note:** If you are curious about the code behind this evolutionary strategy, please look into the ```parallelHillClimber.py``` file and kindly ignore the misnomer. 
 
 #### Sample Size
@@ -48,10 +50,13 @@ This yielded a 50,000 sims being generated. It took approximately 40 minutes for
 
 ## Mutating the Creature
 There were multiple ways of mutating the creature; we could: 
-   - mutate its body by adjusting the dimensions of different body segments or removing (see C in image below) /adding body segments (see Din image below)
-   - mutate its brain by changing the weights of the motor-sensor synaptic connections 
-   - mutate the type of link that each body segment was initially assigned (going from a motor to sensor neuron and vice versa) (see B in image below). 
-Some of these options can be seen below:
+   - Mutate its body 
+     - Adjusting the dimensions of different body segments 
+     - Remove body segments (see C in image below) 
+     - Add body segments (see D in image below)
+   - Mutate its brain 
+     - Change the weights of the motor-sensor synaptic connections 
+   - Mutate the type of link that each body segment was initially assigned (going from a motor to sensor neuron and vice versa) (see B in image below). 
 <img src="https://github.com/eiokonji/finalproject/blob/main/readme_imgs/finalimg5.png">
 
 ## Conclusion
@@ -60,10 +65,17 @@ My results are summarized in the plot below:
 
 <img src="https://github.com/eiokonji/finalproject/blob/main/readme_imgs/Evolution_500_10_10.png">
 
-We see that:
-...
+We see that increasing the number of generations that evolution occurs under tends to yield increased fitness in the population. We can also see from the plot that there are periods of stagnancy for different populations - some for approximately 20 generations and in others for a large amount of their lifespan. 
 
+For example, in Seed 2, after approximately 75 generations, the fitness of the population plateaued. This may be related to how many changes were being effected in each mutation of the child. For my implementation, there was a 33.3% chance of simultaneous body, sensor and neural mutation in the child, a 33.3% chance of body and neural mutation and a 33.4% chance of only body mutations. As we discussed in class, making a lot of small changes may be the safer method but there may be situations where making larger changes would help evolution along and maybe this was one of those situations.
 
+We also see that evolution is not a linear process. As we discussed in the lecture, it is possible for population sizes to wane and grow over time due to their interactions with other external factors. It is also possible for population fitnesses to drop temporarily while the population is weakened before rising as the fitter creatures of the species are the only ones that survive. We see this specifically in Seed 7, which experiences a sharp drop in fitness within its first 100 generations. Over time, however, it is able to recover and increase its fitness in leaps and bounds.
+
+### Limitations and Future Exploration
+While observing the evolved species, I noticed certain patterns which could have been the reason behind their success but which I was unable to further explore due to time constraints. I also recognize that my implementation may not be the most effective method to computationally simulate evolution for locomotion. To those ends, here are some potential areas of investigation for the future observer:
+   - Most of the higher performing seeds had more symmetric morphologies, more equally sized body segments and were more horizontally expansive. In the future, it would be worth looking into the role that the symmetry, dimensions and direction of expansion have on hastening evolution.
+   - This implementation did not use an advanced neural network system. What would be the impact of using a deeper neural network on the creature in regards to its level of evolution and how quickly it reaches these heights?
+   - Fitness was measured as being able to move the farthest in one direction. This may have biased the algorithm towards making larger creatures which would not necessarily be evolved but would still be considered fit. What are different avenues to approach measuring this form of fitness that is less impacted by the creature's size and what effect would it have on the creature's ability to evolve?
 
 ## Replicating the Simulations
 1. Clone the repository.
@@ -80,9 +92,9 @@ We see that:
 6. Run the ```analyze.py``` file 
    - Click your IDE's ```Run``` icon or run ```python3 analyze.py``` in your terminal
 
-## Resources
-- [Ludobots MOOC](https://www.reddit.com/r/ludobots/wiki/finalproject/)
-- [Video Showing Evolution](...)
+## Resources and 
+- [Ludobots MOOC](https://www.reddit.com/r/ludobots/)
+- [Video Showing Evolution](https://youtu.be/u4eifnvBlWk)
 - [Pyrosim (forked)](https://github.com/jbongard/pyrosim)
 - [Prof. Kriegman's "Artificial Life" Seminar at Northwestern University (links to course syllabus)](https://docs.google.com/document/d/1jURIbvpQ0imcaMk-AHUmj_szZNtsA4lZAlcqXa6usXs/edit) 
 - [Karl Sims work](https://www.karlsims.com/evolved-virtual-creatures.html)
