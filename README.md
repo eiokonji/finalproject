@@ -40,9 +40,9 @@ As mentioned earlier, this creature was evolved with an adapted tournament style
 **Note:** If you are curious about the code behind this evolutionary strategy, please look into the ```parallelHillClimber.py``` file and kindly ignore the misnomer. 
 
 #### Sample Size
-**Population size**: 10
-**Number of Generations**: 500
-**Number of Runs**: 10
+   - **Population size**: 10
+   - **Number of Generations**: 500
+   - **Number of Runs**: 10
 
 This yielded a 50,000 sims being generated. It took approximately 40 minutes for the non-erroring runs. Some of these runs proved to not evolve towards their objective. It took a very long time to get all these sims.
 
