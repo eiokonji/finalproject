@@ -1,7 +1,7 @@
 # Final Project
 **Name**: Ebubechukwu Okonji
 
-**Option and Grading**: Engineering Option, 44 points
+**Option and Grading**: Engineering Option
 
 **Expectations**: An executable, concisely documented, neatly illustrated, and well polished extension of previous projects, showing evolved locomotion. 
 
