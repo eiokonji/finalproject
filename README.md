@@ -9,7 +9,7 @@
 #### 10 Second Summary
 ![](https://github.com/eiokonji/finalproject/blob/main/readme_imgs/teaser-giffy.gif)
 
-If that seems interesting, here's a [2 Minute Summary Video](...)
+If that seems interesting, here's a [2 Minute Summary Video](https://youtu.be/u4eifnvBlWk)
 
 ## Introduction
 This project tried to generate 3D creatures that filled 3D space which were evolved to walk in the negative x-direction (or into the screen) - see the image below for a visual representation of the project's coordinate system. Each creature was randomly generated and mutated, and evolved using an adapted tournament style evolution method. The creature is color-coded: "green" links are innervated (they behave like sensors) while "blue" links are not innervated (they lack sensors).
@@ -31,7 +31,7 @@ All joints are linked to all sensors in the creature regardless of their proximi
 ![How are the links and sensors connected?](https://github.com/eiokonji/finalproject/blob/main/readme_imgs/finalimg2.png)
 <img src="https://github.com/eiokonji/finalproject/blob/main/readme_imgs/finalimg4.png" width=25% height=25%>
 
-### Evolving the Creature
+## Evolving the Creature
 As mentioned earlier, this creature was evolved with an adapted tournament style evolutionary strategy. Here are the steps involved:
 1. Each parent in the population gives birth to a child. The population has now doubled in size.
 2. All members of the population will battle each other and the fitter half of the population will dominate the tournament.
@@ -46,7 +46,7 @@ As mentioned earlier, this creature was evolved with an adapted tournament style
 
 This yielded a 50,000 sims being generated. It took approximately 40 minutes for the non-erroring runs. Some of these runs proved to not evolve towards their objective. It took a very long time to get all these sims.
 
-### Mutating the Creature
+## Mutating the Creature
 There were multiple ways of mutating the creature; we could: 
    - mutate its body by adjusting the dimensions of different body segments or removing (see C in image below) /adding body segments (see Din image below)
    - mutate its brain by changing the weights of the motor-sensor synaptic connections 
@@ -54,9 +54,11 @@ There were multiple ways of mutating the creature; we could:
 Some of these options can be seen below:
 <img src="https://github.com/eiokonji/finalproject/blob/main/readme_imgs/finalimg5.png">
 
-### Conclusion
+## Conclusion
+
 My results are summarized in the plot below:
-![a plot containing five fitness curves, each starting from a different random seed (1,2,3,4,5), showing the fitness of the best creature in the population at each generation](/plot/fCurve.png)
+
+<img src="https://github.com/eiokonji/finalproject/blob/main/readme_imgs/Evolution_500_10_10.png">
 
 We see that:
 ...
@@ -82,7 +84,7 @@ We see that:
 - [Ludobots MOOC](https://www.reddit.com/r/ludobots/wiki/finalproject/)
 - [Video Showing Evolution](...)
 - [Pyrosim (forked)](https://github.com/jbongard/pyrosim)
-- [Prof. Kriegman's "CS396 Artificial Life" course at Northwestern University (links to course syllabus)](https://docs.google.com/document/d/1jURIbvpQ0imcaMk-AHUmj_szZNtsA4lZAlcqXa6usXs/edit) 
-- Karl Sims work
+- [Prof. Kriegman's "Artificial Life" Seminar at Northwestern University (links to course syllabus)](https://docs.google.com/document/d/1jURIbvpQ0imcaMk-AHUmj_szZNtsA4lZAlcqXa6usXs/edit) 
+- [Karl Sims work](https://www.karlsims.com/evolved-virtual-creatures.html)
 
  
