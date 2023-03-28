@@ -92,7 +92,7 @@ While observing the evolved species, I noticed certain patterns which could have
 6. Run the ```analyze.py``` file 
    - Click your IDE's ```Run``` icon or run ```python3 analyze.py``` in your terminal
 
-## Resources and 
+## Resources
 - [Ludobots MOOC](https://www.reddit.com/r/ludobots/)
 - [Video Showing Evolution](https://youtu.be/u4eifnvBlWk)
 - [Pyrosim (forked)](https://github.com/jbongard/pyrosim)
